@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Overpass";
+    src: url("../assets/fonts/Overpass-VariableFont_wght.ttf");
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    font-family: "Overpass";
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(217, 12%, 63%);
+}
+
+.card {
+    margin: auto;
+    padding: 35px;
+    width: 350px;
+    background: rgb(34,40,51);
+    background: linear-gradient(180deg, rgba(34,40,51,1) 0%, rgba(22,30,40,1) 100%); 
+    border-radius: 20px;
+}
+
+.circle-star {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: hsl(215, 18%, 19%);
+    border-radius: 50%;
+}
+
+.star-img {
+    display: block;
+    margin: auto;
+    width: 24px;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.rate-selector {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 0;
+    list-style: none;
+}
+
+.rate-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: hsl(215, 18%, 19%);
+    border-radius: 50%;
+    font-size: 17px;
+}
+
+.rate-mark:last-child {
+    margin-right: 0;
+}
+
+.rate-mark:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.rate-mark.active {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    text-decoration: none;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+.submit-button:disabled {
+    background-color: hsl(215, 18%, 19%);
+    cursor: default;
+}
+
+.submit-button:active:not(:disabled) {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.tk-card {
+    display: none;
+    text-align: center;
+}
+
+.tk-img {
+    margin-top: 1rem;
+}
+
+.rate-selection {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    background-color: hsl(215, 18%, 19%);
+    border-radius: 20px;
+    color:hsl(25, 97%, 53%);
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        padding: 25px;
+        width: 300px;
+    }
+
+    .circle-star {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .star-img {
+        width: 20px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .rate-mark {
+        margin-right: 18.75px;
+        width: 45px;
+        height: 45px;
+    }
+}
